@@ -1,0 +1,94 @@
+/*CSS file of main page*/
+*{
+  font-family:Malgun Gothic, Dotum;
+}
+
+h1 {
+  width:1540px;
+  padding-top:140px;
+  padding-left:20px;
+  padding-bottom:20px;
+  font-size:60px;
+  font-weight:bold;
+  color:white;
+  background:#A3BFB7;
+  border-bottom:5px dashed #395953;
+  margin:0px;
+}
+
+h2 {
+  font-size:40px;
+  font-weight:bold;
+  color:#395953;
+}
+
+ul {
+  list-style-position:outside;
+  margin-left:0px;
+  margin-bottom:10px;
+  padding-left:15px;
+}
+
+#page {
+  position:relative;
+  width:1600px;
+  overflow:visible;
+}
+
+
+#info {
+  position:relative;
+  padding:20px;
+  background:#F2F2F2;
+  float:left;
+  height:650px;
+}
+
+#itinerary {
+  position:relative;
+  padding:20px;
+  background:#C1D9D4;
+  float:left;
+  height:650px;
+  width:500px;
+}
+
+#links {
+  position:relative;
+  padding:20px;
+  background:#F2F2F2;
+  float:left;
+  height:650px;
+}
+
+#budgetlink {
+  position:relative;
+  padding-right:20px;
+  float:left;
+  text-align:center;
+  opacity:0.7;
+}
+
+#budgetlink:hover {
+  opacity:1.0;
+}
+
+#photolink {
+  position:relative;
+  float:right;
+  text-align:center;
+  opacity:0.7;
+}
+
+#photolink:hover {
+  opacity:1.0;
+}
+
+#lastphoto {
+  position:relative;
+  clear:both;
+}
+
+div{
+  border:0px solid red;
+}

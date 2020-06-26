@@ -1,0 +1,13 @@
+<div class = "commenter">
+    <p><%= comment.commenter %></p>
+</div>
+<div class = "body">
+    <p><%= comment.body %></p>
+</div>
+<div class = "delete">
+    <p>
+        <%= link_to '댓글 삭제', [comment.gallery, comment], 
+            method: :delete,
+            data: { confirm: '삭제하시겠습니까?' } %>
+    </p>
+</div>

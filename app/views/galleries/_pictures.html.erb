@@ -1,0 +1,7 @@
+    <% @gallery.pictures.each do |picture| %>
+      <% @picName = picture.filename %>
+      <div class="pic">
+        <%= image_tag @picName, width: "480px", height: "320px" %>
+        <div class="exp"><%= picture.exp %></div>
+      </div>
+    <% end %>

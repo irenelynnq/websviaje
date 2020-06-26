@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag "03photo" %>
+    <title>Viaje Photo</title>
+  </head>
+  <body>
+    <%= render 'header' %>
+    
+    <div class = "picture_area">
+      <div class="country">
+        <h2>
+          <%= @gallery.name %>
+        </h2>
+        <p>
+          <%= @gallery.text %>
+        </p>
+      </div>
+      <%= render 'pictures' %>
+    </div>
+    
+    <div class = "comments_area">
+      <h4>댓글을 입력하세요:</h4>
+      <%= render 'comments/form' %>
+      <h4>댓글</h4>
+      <% @gallery.comments.each do |comment| %>
+       <% break if comment.body == nil %>
+        <div class = "commenter">
+          <p><%= comment.commenter %></p>
+        </div>
+        <div class = "body">
+          <p><%= comment.body %></p>
+        </div>
+        <div class = "delete">
+          <p>
+            <%= link_to '댓글 삭제', [comment.gallery, comment], 
+              method: :delete,
+              data: { confirm: '삭제하시겠습니까?' } %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+    
+    </body>
+</html>

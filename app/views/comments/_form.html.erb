@@ -1,0 +1,13 @@
+<%= form_for([@gallery, @gallery.comments.build]) do |f| %>
+      <p>
+        <%= f.label :이름 %>
+        <%= f.text_field :commenter %>
+      </p>
+      <p>
+        <%= f.label :댓글 %>
+        <%= f.text_area :body %>
+      </p>
+      <p>
+        <%= f.submit %>
+      </p>
+<% end %>

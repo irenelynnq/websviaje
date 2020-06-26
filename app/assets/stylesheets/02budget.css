@@ -1,0 +1,101 @@
+/*CSS file of budget page*/
+*{
+  font-family:Malgun Gothic, Dotum;
+}
+
+#header {
+  /*float:left;*/
+  width:1560px;
+  background:#A3BFB7;
+  border-bottom:5px dashed #395953;
+}
+
+h1 {
+  /*position:relative;*/
+  margin-top:80px;
+  padding-left:20px;
+  padding-top:0px;
+  padding-bottom:20px;
+  width:50%;
+  font-size:40px;
+  font-weight:bold;
+  color:white;
+  /*margin:0px;*/
+  display:inline-block;
+  border-bottom:0px;
+}
+
+#header>a:link, #header>a:visited {
+  position:relative;
+  /*float:right;*/
+  margin-top:80px;
+  margin-right:20px;
+  background-color:#A3BFB7;
+  color:#F2F2F2;
+  padding:15px;
+  border:5px solid;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+}
+
+#header>a:hover {
+  background-color:#72A69C;
+}
+
+#manage {
+  position:relative;
+  padding:15px;
+  padding-right:77px;
+  background:#F2F2F2;
+  float:left;
+  height:600px;
+}
+#manage>h3  {
+  margin:35px;
+  margin-top:50px;
+  margin-bottom:10px;
+}
+
+#manage p {
+  margin-left:35px;
+}
+
+#chi {
+  position:relative;
+  padding:15px;
+  background:#C1D9D4;
+  float:left;
+  height:600px;
+}
+
+#others {
+  position:relative;
+  padding:15px;
+  background:#F2F2F2;
+  float:left;
+  height:600px;
+}
+
+table {
+  margin:10px;
+  font-size:16px;
+  border-collapse:collapse;
+}
+
+th, td {
+  padding:15px;
+  padding-left:25px;
+  padding-right:25px;
+  border-bottom:1px solid #DDD;
+  text-align:left;
+}
+
+.number {
+  text-align:right;
+}
+
+tr:hover {
+  background-color:#A3BFB7;
+}
+

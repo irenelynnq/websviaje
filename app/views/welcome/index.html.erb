@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag "01main" %>
+    <title>Viaje</title>
+  </head>
+  <body style="margin:0">
+    <h1>2019년 여름 여행의 기록</h1>
+    <div id="page">
+      <div id="info">
+        <%= image_tag "china_4120.jpg", alt: "we went up to 4120m", width: "480", height: "360" %>
+        <h2>정보</h2>
+        <p>언제: 2019년 6월 30일 ~ 2019년 8월 9일</p>
+        <p>어디를: 중국, 스페인, 모로코, 포르투갈</p>
+        <p>누구와: 혜린, 서정, 현정</p>
+      </div> <!--info div-->
+      
+      <div id="itinerary">
+        <h2>여행 일정</h2>
+          <ol type="1">
+            <li>중국</li>
+              <ul type="circle">
+                <li>상하이</li>
+                <li>청두: 판다기지, 촉나라 거리</li>
+                <li>시닝: 탑얼사, 차카염호, 청해호, 해발 4120m</li>
+                <li>후하호터: 내몽고 옛 거리, 사막체험, 게르 취침</li>
+                <li>베이징</li>
+              </ul>
+            <li>스페인</li>
+              <ul type="circle">
+                <li>바르셀로나: 몬주익 언덕, 피게레스 달리 박물관, 
+                람블라스 거리, 바르셀로네타 해수욕, 구엘 공원, 
+                산 파우 병원, 사그라다 파밀리아, 까사 밀라, 까사 바뜨요</li>
+                <li>그라나다: 산 니콜라스 전망대, 알람브라 궁전</li>
+                <li>세비야: 카디즈, 스페인 광장, 메트로폴 파라솔, 플라멩코</li>
+              </ul>
+           <li>모로코</li>
+              <ul type="circle">
+                <li>탕헤르</li>
+                <li>테투안</li>
+                <li>쉐프샤우엔</li>
+                <li>페즈</li>
+                <li>메르주가: 사막 투어</li>
+                <li>카사블랑카</li>
+              </ul>
+            <li>포르투갈</li>
+              <ul type="circle">
+                <li>포르투: 와이너리 투어</li>
+                <li>코임브라: 코임브라 대학교</li>
+                <li>리스본</li>
+              </ul>
+         </ol>
+      </div> <!--itinerary div-->
+      
+      
+      
+      <div id="links">
+        <div id="budgetlink">
+          <%= link_to budget_page_path do %>
+            <%= image_tag "moroco_cat1little.jpg", alt: "kitty", width: "210", height: "140" %>
+          <% end %>
+          <h4><em>예산</em></h4>
+        </div>
+        <div id="photolink">
+          <%= link_to gallery_path(id: 1) do %>
+            <%= image_tag "moroco_cat2chair.jpg", alt: "cats on chair", width: "210px", height: "140px" %>
+          <% end %>
+          <h4><em>사진</em></h4>
+        </div>
+        <div id="lastphoto">
+          <%=image_tag "moroco_pes_view.jpg", alt: "view of pes, moroco", width: "480", height: "320" %>
+        </div>
+      </div> <!--links div-->
+      
+    </div> <!--page div-->
+  </body>
+</html>    

@@ -1,0 +1,137 @@
+/*CSS file of photo page*/
+*{
+  font-family:Malgun Gothic, Dotum;
+}
+
+
+#header {
+  float:left;
+  width:100%;
+  background:#A3BFB7;
+  border-bottom:5px dashed #395953;
+}
+
+h1 {
+  float:left;
+  position:relative;
+  padding-top:80px;
+  padding-left:20px;
+  padding-bottom:20px;
+  padding-right:20px;
+  width:500px;
+  font-size:40px;
+  font-weight:bold;
+  color:white;
+  margin:0px;
+  border:0px solid red;
+  display:inline-block;
+  
+}
+
+
+#header>a:link, #header>a:visited {
+  position:relative;
+  float:right;
+  margin-top:80px;
+  margin-right:20px;
+  background-color:#A3BFB7;
+  color:#F2F2F2;
+  padding:15px;
+  border:5px solid;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+}
+
+#header>a:hover {
+  background-color:#72A69C;
+}
+
+.gallery-nav {
+  float: left;
+  list-style: none;
+  padding-top:85px;
+}
+
+.gallery-nav li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.gallery-nav li a:link,
+.gallery-nav li a:visited {
+  padding: 8px 0;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.gallery-nav li a:hover,
+.gallery-nav li a:active{
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.picture_area {
+  clear:both;
+}
+
+.pic {
+  margin:15px;
+  float:left;
+  border:5px solid #C1D9D4;
+}
+
+.pic:hover {
+  border:5px solid #395953;
+}
+
+.exp {
+  padding:10px;
+  text-align:center;
+  font-size:15px;
+}
+
+.country {
+  margin:15px;
+  width:490px;
+  height:350px;
+  float:left;
+  overflow:auto;
+}
+
+h2 {
+  font-size:30px;
+}
+
+textarea {
+  width: 70%;
+}
+
+.comments_area {
+  margin:20px;
+  clear:both;
+  width:80%;
+}
+
+.commenter {
+  padding:5px;
+  padding-left:30px;
+  font-weight:bold;
+  width:5%;
+  clear:left; 
+  float:left;
+}
+
+.body {
+  padding:5px;
+  float:left;
+  width:80%;
+}
+
+.delete {
+  text-decoration:none;
+  float:left;
+}
